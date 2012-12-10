@@ -1,0 +1,101 @@
+
+R version 2.15.1 (2012-06-22) -- "Roasted Marshmallows"
+Copyright (C) 2012 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-apple-darwin9.8.0/x86_64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "my1rpack"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('my1rpack')
+Loading required package: tikzDevice
+Loading required package: filehash
+filehash: Simple key-value database (2.2-1 2012-03-12)
+tikzDevice: R Graphics Output in LaTeX Format (v0.6.2-92-0ad2792)
+  LaTeX found in the PATH using the command: pdflatex
+  XeLaTeX found in the PATH using the command: xelatex
+  LuaLaTeX found in the PATH using the command: lualatex
+> 
+> assign(".oldSearch", search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("my1rpack-package")
+> ### * my1rpack-package
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: my1rpack
+> ### Title: Homework 2
+> ### Aliases: my1rpack-package my1rpack
+> ### Keywords: package
+> 
+> ### ** Examples
+> 
+> require(my1rpack)
+> 
+> problem1('bmw1series', dnorm, c(-5, 5), 10, TRUE)
+Creating temporary TikZ metrics dictionary at:
+	/var/folders/xq/0hs3bq2d1rq4llcjpgyyv7j40000gn/T//Rtmp26nuT1/tikzMetricsDictionary
+> data(problem2)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("problem1")
+> ### * problem1
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: problem1
+> ### Title: Function for homework 2 problem 1
+> ### Aliases: problem1
+> 
+> ### ** Examples
+> 
+> problem1('bmw1series', dnorm, c(-5, 5), 10, TRUE)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("problem2")
+> ### * problem2
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: problem2
+> ### Title: Function for homework 2 problem 2
+> ### Aliases: problem2
+> ### Keywords: datasets
+> 
+> ### ** Examples
+> 
+> data(problem2)
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cat("Time elapsed: ", proc.time() - get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.461 0.044 9.183 7.887 0.704 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

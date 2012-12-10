@@ -3,23 +3,27 @@
 \alias{problem1}
 
 \title{
-Function of homework 2 problem 1
+Function for homework 2 problem 1
 }
 
 \description{
-
-The purpose of the function is to generate line plot of specific distribution over the interval (nrange) by randomly sampling sample times. The plot is in tex trkz format. If the argument "compile" is "TRUE", a PDF file of plot would be generate by coming the tex file.
+This function plots the a function for a specified range using a
+specified number of sample points. The generated plot is in tex tikz
+format. With the last argument being TRUE, it compiles the generated tex
+file into a PDF file.
 }
 
-\usage{problem1(filename = 'nameOfOutput', fcnname = aFunction, nRange =
-c(xLowerBound, xUpperBound), nsample = N, TRUE)}
+\usage{problem1(filename = NULL, fcnname = NULL, nrange = NULL, nsample = NULL, compile = NULL)}
 
 \arguments{
-  \item{filename}{The file name of the plot}
+  \item{filename}{The file name of the generated plot, without
+    suffix.}
   \item{fcnname}{A reference to a function.}
-  \item{nrange}{The interval of x value.}
+  \item{nrange}{Two-element array containing the lower and upper bound
+    of the x values.}
   \item{nsample}{Number of sample points in the plot.}
-  \item{compile}{Indicating whether to generate the PDF file.}
+  \item{compile}{A boolean variable indicating whether to generate the
+    PDF file upon completion of the function call.}
 }
 
 \value{
@@ -29,8 +33,7 @@ c(xLowerBound, xUpperBound), nsample = N, TRUE)}
 \author{
 Rong Fan <rfan4@jhu.edu>
 }
-\note{
-}
+
 \examples{
-problem1('bmw1series', dnorm, c(-5, 5), 100, TRUE)
+problem1('bmw1series', dnorm, c(-5, 5), 10, TRUE)
 }
