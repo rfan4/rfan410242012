@@ -33,6 +33,9 @@ file into a PDF file.
 \author{
 Rong Fan <rfan4@jhu.edu>
 }
+\note{}
+\details{}
+
 
 \examples{
 problem1('bmw1series', dnorm, c(-5, 5), 10, TRUE)

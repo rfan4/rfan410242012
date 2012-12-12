@@ -30,9 +30,10 @@
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
-* checking R code for possible problems ... NOTE
-.help.ESS: no visible global function definition for ‘index.search’
-* checking Rd files ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... NOTE
+prepare_Rd: problem1.Rd:37: Dropping empty section \details
+prepare_Rd: problem1.Rd:36: Dropping empty section \note
 * checking Rd metadata ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK

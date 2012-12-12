@@ -32,14 +32,14 @@ tikzDevice: R Graphics Output in LaTeX Format (v0.6.2-92-0ad2792)
 > 
 > assign(".oldSearch", search(), pos = 'CheckExEnv')
 > cleanEx()
-> nameEx("my1rpack-package")
-> ### * my1rpack-package
+> nameEx("my1rpack")
+> ### * my1rpack
 > 
 > flush(stderr()); flush(stdout())
 > 
 > ### Name: my1rpack
 > ### Title: Homework 2
-> ### Aliases: my1rpack-package my1rpack
+> ### Aliases: my1rpack
 > ### Keywords: package
 > 
 > ### ** Examples
@@ -48,7 +48,7 @@ tikzDevice: R Graphics Output in LaTeX Format (v0.6.2-92-0ad2792)
 > 
 > problem1('bmw1series', dnorm, c(-5, 5), 10, TRUE)
 Creating temporary TikZ metrics dictionary at:
-	/var/folders/xq/0hs3bq2d1rq4llcjpgyyv7j40000gn/T//Rtmp26nuT1/tikzMetricsDictionary
+	/var/folders/xq/0hs3bq2d1rq4llcjpgyyv7j40000gn/T//RtmpZi2x4o/tikzMetricsDictionary
 > data(problem2)
 > 
 > 
@@ -89,7 +89,7 @@ Creating temporary TikZ metrics dictionary at:
 > ### * <FOOTER>
 > ###
 > cat("Time elapsed: ", proc.time() - get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.461 0.044 9.183 7.887 0.704 
+Time elapsed:  0.505 0.048 10.306 8.85 0.805 
 > grDevices::dev.off()
 null device 
           1 

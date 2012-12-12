@@ -5,14 +5,14 @@ library('my1rpack')
 
 assign(".oldSearch", search(), pos = 'CheckExEnv')
 cleanEx()
-nameEx("my1rpack-package")
-### * my1rpack-package
+nameEx("my1rpack")
+### * my1rpack
 
 flush(stderr()); flush(stdout())
 
 ### Name: my1rpack
 ### Title: Homework 2
-### Aliases: my1rpack-package my1rpack
+### Aliases: my1rpack
 ### Keywords: package
 
 ### ** Examples

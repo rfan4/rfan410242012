@@ -6,5 +6,5 @@ Date: 2012-11-01
 Author: Rong Fan
 Maintainer: Rong Fan <rfan4@jhu.edu>
 Depends: tikzDevice
-Description: Contains a function for generating tikz plots and a dataset containing winter Olympics medal statistics by country.
+Description: There are a function for compiling plots and a database of medal count by countries.
 License: GPL-3
